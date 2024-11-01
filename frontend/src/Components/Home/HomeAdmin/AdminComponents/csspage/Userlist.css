@@ -1,0 +1,136 @@
+.user-list {
+    /* padding: 20px; */
+    overflow-y: auto;
+    max-width: 100%; /* Đảm bảo không vượt quá chiều rộng khung */
+    box-sizing: border-box; /* Đảm bảo padding được tính vào tổng chiều rộng */
+    height: 500px; /* Chiều cao cố định cho danh sách người dùng */
+  }
+  
+  /* Styling cho bảng */
+  table {
+    width: 100%; /* Đảm bảo bảng sử dụng toàn bộ chiều rộng */
+    border-collapse: collapse; /* Gộp các đường biên lại với nhau */
+  }
+  
+  thead {
+    background-color: #f2f2f2; /* Màu nền cho tiêu đề */
+  }
+  
+  th, td {
+    padding: 12px; /* Padding cho ô */
+    text-align: left; /* Căn trái cho văn bản */
+    border-bottom: 1px solid #ddd; /* Đường biên dưới ô */
+  }
+  
+  th {
+    font-weight: bold; /* Chữ đậm cho tiêu đề */
+  }
+  
+  /* Định dạng nút xóa */
+  button {
+    background-color: #e07a5f; /* Màu nền nút */
+    color: white; /* Màu chữ */
+    border: none; /* Không viền */
+    padding: 8px 12px; /* Padding cho nút */
+    border-radius: 4px; /* Bo tròn góc cho nút */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu */
+  }
+  
+  /* Hiệu ứng hover cho nút */
+  button:hover {
+    background-color: #c76e52; /* Màu nền khi hover */
+  }
+  
+  /* Định dạng cho nút chuyển đổi */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px; /* Chiều rộng của công tắc */
+    height: 20px; /* Chiều cao của công tắc */
+  }
+  
+  .switch input {
+    opacity: 0; /* Ẩn input */
+    width: 0; /* Đặt chiều rộng là 0 */
+    height: 0; /* Đặt chiều cao là 0 */
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Màu nền công tắc */
+    transition: .4s; /* Hiệu ứng chuyển đổi */
+    border-radius: 34px; /* Bo tròn cho công tắc */
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px; /* Chiều cao vòng tròn */
+    width: 12px; /* Chiều rộng vòng tròn */
+    left: 4px; /* Vị trí bắt đầu vòng tròn */
+    bottom: 4px; /* Vị trí theo chiều dọc */
+    background-color: white; /* Màu nền cho vòng tròn */
+    transition: .4s; /* Hiệu ứng chuyển đổi */
+    border-radius: 50%; /* Bo tròn vòng tròn */
+  }
+  
+  /* Khi input được checked */
+  input:checked + .slider {
+    background-color: #2196F3; /* Màu nền khi checked */
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(20px); /* Di chuyển vòng tròn sang bên phải */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    th, td {
+      padding: 8px; /* Giảm padding cho các ô */
+      font-size: 14px; /* Kích thước chữ nhỏ hơn */
+    }
+  
+    button {
+      padding: 6px 10px; /* Giảm padding cho nút */
+      font-size: 14px; /* Kích thước chữ nhỏ hơn */
+    }
+  
+    .switch {
+      width: 30px; /* Chiều rộng công tắc nhỏ hơn */
+      height: 15px; /* Chiều cao công tắc nhỏ hơn */
+    }
+  
+    .slider:before {
+      height: 10px; /* Chiều cao vòng tròn nhỏ hơn */
+      width: 10px; /* Chiều rộng vòng tròn nhỏ hơn */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    th, td {
+      padding: 6px; /* Giảm padding cho các ô */
+      font-size: 12px; /* Kích thước chữ nhỏ hơn */
+    }
+  
+    button {
+      padding: 5px 8px; /* Giảm padding cho nút */
+      font-size: 12px; /* Kích thước chữ nhỏ hơn */
+    }
+  
+    .switch {
+      width: 25px; /* Chiều rộng công tắc nhỏ hơn */
+      height: 12px; /* Chiều cao công tắc nhỏ hơn */
+    }
+  
+    .slider:before {
+      height: 8px; /* Chiều cao vòng tròn nhỏ hơn */
+      width: 8px; /* Chiều rộng vòng tròn nhỏ hơn */
+    }
+  }
+  

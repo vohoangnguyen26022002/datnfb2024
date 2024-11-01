@@ -1,0 +1,226 @@
+/* .navbar-container{
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: flex-end;
+    background-color: #2B2D42;
+    color: #00A3E1;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box; 
+}
+.navbar-container > *{
+    margin: 0 1.25rem;
+    text-decoration: none;
+    font-weight: 600;
+    color:rgb(0, 99, 230);
+    white-space: nowrap;
+    font-size: 16px; 
+}
+.navbar-home {
+    background-color: #f863a1;
+    color: #FFFFFF;
+    padding:0.2rem;
+    border-radius: 6px;
+}
+.navbar-login {
+    background-color: #005fdb; 
+    color: #FFFFFF;
+    padding:0.2rem;
+    border-radius: 6px;
+}
+.navbar-register{
+    background-color: #E07A5F; 
+    color: #FFFFFF;
+    padding:0.2rem;
+    border-radius: 6px;
+}
+
+.navbar-user{
+    color: rgb(0, 154, 165);
+    font-size: 1rem;
+}
+
+.navbar-dropdown {
+    position: absolute; 
+    top: 40px; 
+    right: 0; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .navbar-dropdown-item {
+    padding: 0.5rem; 
+    border-radius: 6px;
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    text-decoration: none;
+}
+  
+  .navbar-dropdown-item:last-child {
+    color: white;  
+    border-radius: 4px; 
+    
+  }
+  
+  .navbar-dropdown-item:hover {
+    background-color: #f0f0f0; 
+  }
+  
+  .navbar-dropdown-item:last-child:hover {
+    background-color: darkgray;
+  }
+
+  .navbar-logout {
+    background-color: #E07A5F;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-logout:hover {
+    background-color: #7d1b00;
+    transform: scale(1);
+}
+  
+.navbar-dropdown-title {
+    color: #ffffff;
+    padding: auto;
+    background-color: #040404;
+}
+
+@media (max-width: 768px) {
+    .navbar-container > * {
+        font-size: 14px; 
+        margin: 0 0.5rem; 
+    }
+
+    .navbar-user {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container > * {
+        font-size: 12px; 
+    }
+} */
+
+
+/* navbar.css */
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Căn giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 20px; /* Đặt khoảng cách cho navbar */
+    background-color: #F5E8C7; /* Màu nền navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho navbar */
+    flex-wrap: nowrap; /* Ngăn không cho phần tử xuống dòng */
+  }
+  
+  .navbar-user-section {
+    display: flex; /* Sắp xếp phần tử theo hàng */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: auto;
+  }
+  
+  .navbar-home, .navbar-login, .navbar-register {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #774936; /* Màu chữ tối */
+    font-weight: bold; /* Chữ đậm */
+    margin: 0 10px; /* Khoảng cách giữa các liên kết */
+    transition: color 0.3s; /* Hiệu ứng chuyển màu khi hover */
+  }
+  
+  .navbar-user-icon {
+    cursor: pointer; /* Con trỏ thay đổi khi hover */
+  }
+  
+  .navbar-dropdown {
+    position: absolute; 
+  top: 40px; 
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translateX(-50%);
+  background-color: white; 
+  border: 1px solid #ccc; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+  z-index: 1000; 
+  padding: 10px; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: stretch; /* Căn chỉnh cho các phần tử bên trong */
+  width: 200px; /* Chiều rộng dropdown *//* Đặt khoảng cách cho dropdown */ /* Ẩn dropdown mặc định */ /* Đặt khoảng cách cho dropdown */
+  text-decoration: none;  
+}
+
+.navbar-dropdown-item {
+  text-decoration: none;
+  color: black;
+  padding: 0.2rem;
+  background-color: #d3c69f;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.navbar-dropdown-item:hover {
+  background-color: #ccc;
+  transform: scale(1);
+}
+
+.navbar-dropdown-title {
+  color: rgb(36, 9, 241);
+}
+
+.navbar-logout {
+  background-color: #E07A5F;
+  color: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-logout:hover {
+  background-color: #7d1b00;
+  transform: scale(1);
+}
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: row; /* Đảm bảo vẫn ở hàng trên màn hình nhỏ */
+      justify-content: space-between; /* Căn giữa các phần tử */
+      padding: 10px 10px; /* Điều chỉnh padding */
+      overflow: hidden; /* Ẩn các phần tử tràn ra ngoài */
+    }
+  
+    .navbar-home, .navbar-login, .navbar-register {
+      margin: 0 5px; /* Khoảng cách giữa các liên kết khi sắp xếp theo hàng */
+      white-space: nowrap; /* Ngăn phần tử xuống dòng */
+    }
+  
+    .navbar-user-section {
+      margin-left: auto; /* Căn phải cho user section */
+    }
+  }
+  

@@ -1,0 +1,162 @@
+/* .admin-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .admin-header h1 {
+    font-size: 2rem;
+  }
+  
+  nav button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  nav button.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  .admin-content {
+    margin-top: 20px;
+  }
+  
+  .user-list table, .login-history table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .user-list th, .login-history th, .user-list td, .login-history td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .login-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+   */
+
+
+   html, body {
+    height: 100%;
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scroll on the body */
+  }
+/* Main container */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Header navigation styling */
+.admin-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #333333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.admin-header button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.2s;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin: 0 10px;
+}
+
+.admin-header button:hover {
+  color: #FFD700;
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-header button.active {
+  border-bottom: 2px solid #FFD700;
+}
+
+/* Content area styling */
+.admin-content {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px 0;
+  overflow-y: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 10px;
+  }
+
+  .admin-header {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .admin-header button {
+    flex: 1;
+    min-width: 80px;
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+  }
+
+  .admin-content {
+    padding: 10px;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-header button {
+    font-size: 12px;
+    padding: 6px 8px;
+    margin: 0 3px;
+  }
+
+  .admin-content {
+    margin-top: 50px;
+    padding: 8px;
+  }
+}
+
+
+
+
+
